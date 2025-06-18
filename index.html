@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plantilla Landing - Tienda de Ropa</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Estilos adicionales opcionales */
+  </style>
+</head>
+<body class="font-sans bg-gray-50">
+
+  <!-- Navegación -->
+  <nav class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 flex justify-between h-16 items-center">
+      <div class="flex-shrink-0">
+        <img src="logo.png" alt="Logo" class="h-10">
+      </div>
+      <div class="hidden md:flex space-x-4">
+        <a href="#inicio" class="hover:text-orange-500">Inicio</a>
+        <a href="#sobre-nosotros" class="hover:text-orange-500">Nosotros</a>
+        <a href="#productos" class="hover:text-orange-500">Productos</a>
+        <a href="#reseñas" class="hover:text-orange-500">Reseñas</a>
+        <a href="#contacto" class="hover:text-orange-500">Contacto</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Encabezado principal -->
+  <header id="inicio" class="h-screen flex flex-col justify-center items-center text-center bg-cover bg-center" style="background-image: url('fondo.jpg');">
+    <h1 class="text-black text-6xl font-bold uppercase mb-4">Nombre de la Marca</h1>
+    <h2 class="text-black text-2xl">Slogan de la tienda</h2>
+  </header>
+
+  <!-- Sección: Sobre nosotros -->
+  <section id="sobre-nosotros" class="py-16 bg-white text-center">
+    <div class="max-w-3xl mx-auto space-y-4 text-lg text-gray-800">
+      <h2 class="text-3xl font-bold mb-4">Sobre Nosotros</h2>
+      <p>Descripción general de la marca, visión y propuesta de valor.</p>
+    </div>
+  </section>
+
+  <!-- Sección: Productos -->
+  <section id="productos" class="py-16 text-center bg-gray-50">
+    <h2 class="text-3xl font-bold mb-8">Nuestros Productos</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
+      <!-- Tarjetas de productos -->
+      <div class="bg-white p-4 rounded shadow">
+        <img src="producto1.jpg" alt="Producto" class="w-full h-48 object-cover rounded mb-4">
+        <p class="font-semibold">Nombre del Producto</p>
+      </div>
+      <!-- Repetir para más productos -->
+    </div>
+  </section>
+
+  <!-- Sección: Reseñas -->
+  <section id="reseñas" class="py-16 bg-white text-center">
+    <h2 class="text-3xl font-bold mb-8">Reseñas de Clientes</h2>
+    <div class="max-w-3xl mx-auto space-y-6">
+      <article>
+        <h3 class="text-xl font-semibold">Nombre Cliente</h3>
+        <p>Comentario del cliente sobre su experiencia.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Sección: Contacto -->
+  <section id="contacto" class="py-16 bg-gray-200 text-center">
+    <h2 class="text-3xl font-bold mb-8">Contacto</h2>
+    <form class="max-w-md mx-auto bg-white p-6 rounded shadow space-y-4">
+      <input type="text" placeholder="Nombre" class="w-full p-3 border rounded">
+      <input type="email" placeholder="Correo" class="w-full p-3 border rounded">
+      <select class="w-full p-3 border rounded">
+        <option value="">Producto</option>
+        <option value="hoodie">Hoodie</option>
+      </select>
+      <button type="submit" class="bg-orange-500 text-white px-6 py-3 rounded">Enviar</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-orange-500 text-white py-4 text-center">
+    © 2025 Tu Marca - Todos los derechos reservados
+  </footer>
+
+</body>
+</html>
+
